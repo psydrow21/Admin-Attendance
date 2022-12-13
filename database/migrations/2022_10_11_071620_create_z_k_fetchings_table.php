@@ -1,0 +1,36 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('z_k_fetchings', function (Blueprint $table) {
+            $table->id();
+            $table->integer('biometricsuid')->unique();
+            $table->integer('empid');
+            $table->string('logs');
+            $table->string('status');
+            $table->string('type');
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('z_k_fetchings');
+    }
+};

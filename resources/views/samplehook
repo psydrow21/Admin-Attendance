@@ -1,0 +1,5 @@
+​<script>
+const client = new HostedHooks("API_KEY")
+
+
+</script>
