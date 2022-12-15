@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('zkfetches', function (Blueprint $table) {
             $table->id();
             $table->string('serialnumber');
-            $table->integer('biometricsuid');
+            $table->integer('biometricsuid')->unique();
             $table->integer('empid');
             $table->string('logs');
             $table->string('status');

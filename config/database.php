@@ -85,50 +85,6 @@ return [
             ]) : [],
         ],
 
-        'mysql2' => [
-            'driver' => 'mysql',
-         
-            'host' => env('DB_HOST_SECOND'),
-            'port' => env('DB_PORT_SECOND'),
-            'database' => env('DB_DATABASE_SECOND'),
-            'username' => env('DB_USERNAME_SECOND'),
-            'password' => env('DB_PASSWORD_SECOND'),
-            'unix_socket' => env('DB_SOCKET_SECOND'),
-            'charset' => 'utf8mb4',
-            'collation' => 'utf8mb4_unicode_ci',
-            'prefix' => '',
-            'prefix_indexes' => true,
-            'strict' => true,
-            'engine' => null,
-            'ssl_mode' => env('SSL_MODE'),
-            'options' => extension_loaded('pdo_mysql') ? array_filter([
-                PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
-            ]) : [],
-        ],
-
-        'mysql3' => [
-            'driver' => 'mysql',
-         
-            'host' => env('DB_HOST_THIRD'),
-            'port' => env('DB_PORT_THIRD'),
-            'database' => env('DB_DATABASE_THIRD'),
-            'username' => env('DB_USERNAME_THIRD'),
-            'password' => env('DB_PASSWORD_THIRD'),
-            'unix_socket' => env('DB_SOCKET_THIRD'),
-            'charset' => 'utf8mb4',
-            'collation' => 'utf8mb4_unicode_ci',
-            'prefix' => '',
-            'prefix_indexes' => true,
-            'strict' => true,
-            'engine' => null,
-            'ssl_mode' => env('SSL_MODE'),
-            'options' => extension_loaded('pdo_mysql') ? array_filter([
-                PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
-            ]) : [],
-        ],
-
-
-
  
 
 

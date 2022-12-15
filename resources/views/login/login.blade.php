@@ -73,8 +73,7 @@
                             <button id="login" type="submit">Submit</button>
                         </div>
                         
-                        {{-- <iframe src="http://127.0.0.1:8000/userscontent" style="zoom: 0.75; -moz-transform: scale(0.75); -moz-transform-origin: 0 0;" frameborder="0"  width="100%" height="200px" style="border:1px solid black;">
-                        </iframe> --}}
+
                         <div class="form-footer text-center mt-5">
                             <p class="text-muted"><img src="assets/images/logo/logo2.gif">
 </p>

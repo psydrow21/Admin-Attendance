@@ -6,7 +6,6 @@
 
         <div class="container mt-5">
             <h2 class="mb-4">Branch List</h2>
-            <div class ="data-tables datatable-dark">
             <table class="table table-bordered yajra-datatable" id="branchdisplay">
                 <thead>
                     <tr>
@@ -16,13 +15,12 @@
                         <th>District Code</th>
                         <th>Area Code</th>
                         <th>Company Name</th>
-                  
+                        <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
                 </tbody>
             </table>
-        </div>
         </div>
            
         
@@ -45,7 +43,7 @@
             {data: 'district_code'},
             {data: 'area_code'},
             {data: 'company_id'},
-          
+            {data: 'action'},
         ]
     });
 

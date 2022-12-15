@@ -9,7 +9,25 @@
 </head>
 <body>
     
-
+<div class="container mt-5">
+    <h2 class="mb-4">Attendance Logs</h2>
+    <table class="table table-bordered yajra-datatable">
+        <thead>
+            <tr>
+                <th>Employee ID</th>
+                <th>Name</th>
+                <th>Logs</th>
+                <th>Status</th>
+                <th>Type</th>
+                
+          
+             
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
    
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>  
@@ -20,55 +38,23 @@
 <script>
   $(document).ready(function () {
     
-
-    var getdata = [];
-  $.get( "https://www.acs.multi-linegroupofcompanies.com/userstocloud", function( data ) {
-    // console.log(data);
-    // getdata = data;  
-
-    //insertion of cloud to local
-    // ajaxCloud(data);
-
-    //Counting the array
-   syncingcount(data);
-
-    })
-
-  })
-
-
-  function syncingcount(f_data){
-    data = f_data;
-  
-    $.ajax({
-        type: 'GET',
-        url: '/userssyncingfunction',
-        data: {'req' : data},
-        success:function(response){
+    $('.yajra-datatable').DataTable({
+        orderable: true, 
+        searchable: true,
+        processing: true,
+        serverSide: true,
+        ajax: '{{route('fetchspecific')}}',
+        columns: [
+            {data: 'empid'},
+            {data: 'name'},
+            {data: 'logs'},
+            {data: 'status'},
+            {data: 'type'},
           
-        }
+        ]
     });
-  }
-function ajaxCloud(f_data) {
-   
-//     for(i = 0;i<5;i++){
-//         test = f_data[i].id;
-//         console.log(test)
-//     }
-//    return;
     
-
-    data = f_data;
-    
-    
-    $.ajax({
-        type: 'GET',
-        url: '/userscloudfunction',
-        data: {'req' : data},
-        success:function(response){
-          
-        }
-    });
-}
+  });
+ 
 </script>
 </html>

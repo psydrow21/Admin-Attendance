@@ -168,9 +168,7 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
         Yajra\DataTables\DataTablesServiceProvider::class,
-        Maatwebsite\Excel\ExcelServiceProvider::class,
-        Yajra\DataTables\DataTablesServiceProvider::class,  
-        Yajra\DataTables\ButtonsServiceProvider::class,  
+        
         // Spatie\WebhookServer\Signer\Signer;
         /*
          * Package Service Providers...
@@ -184,7 +182,6 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        
 
     ],
 
@@ -203,8 +200,6 @@ return [
         // ...
 
         'DataTables' => Yajra\DataTables\Facades\DataTables::class,
-        'Excel' => Maatwebsite\Excel\Facades\Excel::class,
-      
     ])->toArray(),
 
 ];

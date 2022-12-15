@@ -43,8 +43,13 @@
             {data: 'teamid'},
             {data: 'oicid'},
             {data: 'action'},
+       
+           
+          
         ]
     });
+
+
     })  
     </script>
 @endsection

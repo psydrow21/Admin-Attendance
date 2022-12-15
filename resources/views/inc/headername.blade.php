@@ -3,10 +3,10 @@
 <div class="row align-items-center">
     <div class="col-sm-6">
         <div class="breadcrumbs-area clearfix">
-            <h4 class="page-title pull-left">@if(Route::is('main'))Dashboard @elseif(Route::is("biolocation")) Biometrics Location @elseif(Route::is('userscontent')) Users List @endif</h4>
+            <h4 class="page-title pull-left">Dashboard</h4>
             <ul class="breadcrumbs pull-left">
                 <li><a href="index.html">Home</a></li>
-                <li><span>@if(Route::is('main'))Homepage @elseif(Route::is('biolocation'))Local @elseif(Route::is('userscontent')) Users @endif</span></li>
+                <li><span>Table</span></li>
             </ul>
         </div>
     </div>

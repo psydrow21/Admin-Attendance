@@ -16,7 +16,22 @@
             <ul class="notification-area pull-right">
                 <li id="full-view"><i class="ti-fullscreen"></i></li>
                 <li id="full-view-exit"><i class="ti-zoom-out"></i></li>
-                
+                <li class="dropdown">
+                    <i class="ti-bell dropdown-toggle" data-toggle="dropdown">
+                    
+                    </i>
+                    <div class="dropdown-menu bell-notify-box notify-box">
+                        <span class="notify-title">Notification</span>
+                    
+                        <div class="nofity-list">
+                            
+              
+    
+                     
+
+                        </div>
+                    </div>
+                </li>
                 <!-- <li class="dropdown">
                     <i class="fa fa-envelope-o dropdown-toggle" data-toggle="dropdown"><span>3</span></i>
                     <div class="dropdown-menu notify-box nt-enveloper-box">

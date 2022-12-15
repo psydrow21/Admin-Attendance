@@ -6,20 +6,18 @@
 
         <div class="container mt-5">
             <h2 class="mb-4">Company List</h2>
-            <div class ="data-tables datatable-dark">
             <table class="table table-bordered yajra-datatable" id="districtdisplay">
                 <thead>
                     <tr>
                         <th>District Number</th>
                         <th>Under By Name</th>
                         <th>Company Name</th>
-             
+                        <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
                 </tbody>
             </table>
-        </div>
         </div>
            
         
@@ -39,7 +37,7 @@
             {data: 'district_number'},
             {data: 'district_name'},
             {data: 'company_id'},
-        
+            {data: 'action'},
        
            
           

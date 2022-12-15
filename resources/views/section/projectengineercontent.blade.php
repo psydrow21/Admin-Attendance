@@ -5,7 +5,7 @@
 
 
         <div class="container mt-5">
-            <h2 class="mb-4">Propject Engineer List</h2>
+            <h2 class="mb-4">Team List</h2>
             <table class="table table-bordered yajra-datatable" id="engineerdisplay">
                 <thead>
                     <tr>

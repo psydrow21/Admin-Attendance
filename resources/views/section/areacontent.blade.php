@@ -6,7 +6,6 @@
 
         <div class="container mt-5">
             <h2 class="mb-4">Area List</h2>
-            <div class ="data-tables datatable-dark">
             <table class="table table-bordered yajra-datatable" id="areadisplay">
                 <thead>
                     <tr>
@@ -15,13 +14,12 @@
                         <th>Under By(Area)</th>
                         <th>District Code</th>
                         <th>Company Name</th>
-           
+                        <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
                 </tbody>
             </table>
-        </div>
         </div>
            
         
@@ -43,7 +41,7 @@
             {data: 'area_name'},
             {data: 'district_code'},
             {data: 'company_id'},
-         
+            {data: 'action'},
         ]
     });
 
